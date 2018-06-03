@@ -5,9 +5,10 @@ except ImportError:  # python 2
 
 
 def parabola(page, size):
-    for x in range(-size, size):
+    for x in range(size):
         y = x*x / size
         plot(page, x, y)
+        plot(page, -x, y)
 
 
 def draw_axes(page):
